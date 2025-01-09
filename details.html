@@ -90,122 +90,102 @@
         </ul>
       </section>
 
-      <!--=============== CART ===============-->
+      <!--=============== Table ===============-->
       <section class="cart section--lg container">
-        <div class="table__container">
-          <table class="table">
-            <!-- table header -->
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th colspan="3">Name</th>
-                <th>Date</th>
-                <th>Action</th>
-                <th>Reactions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Links 1 -->
-              <tr>
-                <td>
-                  <img
-                    src="./assets//img/img.png"
-                    alt=""
-                    class="table__img"
-                  />
-                </td>
-                <td colspan="3">
-                  <a href="">
-                    <h3 class="table__title">
-                      Topic 1
-                    </h3></a>
-                    <p class="table__description">
-                      Topic related short Notes
-                    </p>   
-                </td>
-                <td>
-                  <span class="table__price">05-01-2025</span>
-                </td>
-                <td><a href="#" class="btn">View</a></td>
-                <td><div class="container">
-                  <button id="likeBtn" class="button like">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                  </button>
-                  <button id="dislikeBtn" class="button dislike">
-                    <i class="fas fa-thumbs-down"></i>
-                  </button>
-                  <div class="count">
-                    <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
-                  </div>
-                </div></td>
-              </tr>
-              <!-- Link 2 -->
-              <tr>
-                <td>
-                  <img
-                    src="./assets//img/pdf.png"
-                    alt=""
-                    class="table__img"
-                  />
-                </td>
-                <td colspan="3">
-                  <a><h3 class="table__title">Topic 2</h3></a>
-                  <p class="table__description">
-                    Topic related short Notes
-                  </p>
-                </td>
-                <td>
-                  <span class="table__price">05-01-2025</span>
-                </td>
-                <td><a href="#" class="btn">View</a></td>
-                <td><div class="container">
-                  <button id="likeBtn" class="button like">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                  </button>
-                  <button id="dislikeBtn" class="button dislike">
-                    <i class="fas fa-thumbs-down"></i>
-                  </button>
-                  <div class="count">
-                    <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
-                  </div>
-                </div></td>
-              </tr>
-              <!-- Link 3 -->
-              <tr>
-                <td>
-                  <img
-                    src="./assets//img/doc.png"
-                    alt=""
-                    class="table__img"
-                  />
-                </td>
-                <td colspan="3">
-                  <h3 class="table__title">
-                    Topic 3
-                  </h3>
-                  <p class="table__description">
-                    Topic related short Notes
-                  </p>
-                </td>
-                <td>
-                  <span class="table__price">05-01-2025</span>
-                </td>
-            <td><a href="#" class="btn">View</a></td>
-                <td><div class="container">
-                  <button id="likeBtn" class="button like">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                  </button>
-                  <button id="dislikeBtn" class="button dislike">
-                    <i class="fas fa-thumbs-down"></i>
-                  </button>
-                  <div class="count">
-                    <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
-                  </div>
-                </div></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table>
+          <thead>
+            <tr>
+                <th >Type</th>
+                <th >Name</th>
+                <th >Date</th>
+                <th >Action</th>
+                <th >Reactions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Type"><img
+                src="./assets//img/img.png"
+                alt=""
+                class="table__img"
+              /></td>
+              <td data-label="Name"><h3 class="table__title">
+                Topic 1
+              </h3></a>
+              <p class="table__description">
+                Topic related short Notes
+              </p>
+            </td>
+              <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+              <td data-label="Action"><a href="#"><i class="fa-regular fa-eye"></i></td>
+              <td data-label="Reactions"><div class="container">
+                <button id="likeBtn" class="button like">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button id="dislikeBtn" class="button dislike">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+                <div class="count">
+                  <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
+                </div>
+              </div></td>
+            </tr>
+            <tr>
+              <td data-label="Type"><img
+                src="./assets//img/pdf.png"
+                alt=""
+                class="table__img"
+              /></td>
+              <td data-label="Name"><h3 class="table__title">
+                Topic 2
+              </h3></a>
+              <p class="table__description">
+                Topic related short Notes
+              </p>
+            </td>
+              <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+              <td data-label="Action"><a href="#"><i class="fa-regular fa-eye"></i></td>
+              <td data-label="Reactions"><div class="container">
+                <button id="likeBtn" class="button like">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button id="dislikeBtn" class="button dislike">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+                <div class="count">
+                  <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
+                </div>
+              </div></td>
+            </tr>
+            <tr>
+              <td data-label="Type"><img
+                src="./assets//img/doc.png"
+                alt=""
+                class="table__img"
+              /></td>
+              <td data-label="Name"><h3 class="table__title">
+                Topic 3
+              </h3></a>
+              <p class="table__description">
+                Topic related short Notes
+              </p>
+            </td>
+              <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+              <td data-label="Action"><a href="#"><i class="fa-regular fa-eye"></i></td>
+              <td data-label="Reactions"><div class="container">
+                <button id="likeBtn" class="button like">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+                <button id="dislikeBtn" class="button dislike">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+                <div class="count">
+                  <span id="likeCount">0</span>&nbsp;&nbsp;<span id="dislikeCount">0</span>
+                </div>
+              </div></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <!--=============== NEWSLETTER ===============-->
