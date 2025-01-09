@@ -87,31 +87,57 @@
       </section>
 
       <!--=============== LOGIN-REGISTER ===============-->
-      <section class="login-register section--lg">
-        <div class="login-register__container container grid ">
-          <div class="login">
-            <h3 class="section__title">Register</h3>
-            <form class="form grid">
-                <input type="text" placeholder="First Name" class="form__input">
-                <input type="text" placeholder="Last Name" class="form__input">
-                <input type="number" placeholder="Mobile Number" class="form__input">
-              <input
-                type="email"
-                placeholder="Your Email"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Your Password"
-                class="form__input"
-              />
-              <div class="form__btn">
-                <button class="btn">Register</button>
+      <div class="wrapper">
+        <div class="title">
+          Registration Form
+        </div>
+        <div class="form">
+           <div class="inputfield">
+              <label>First Name</label>
+              <input type="text" class="input">
+           </div>  
+            <div class="inputfield">
+              <label>Last Name</label>
+              <input type="text" class="input">
+           </div>  
+           <div class="inputfield">
+              <label>Password</label>
+              <input type="password" class="input">
+           </div>  
+          <div class="inputfield">
+              <label>Confirm Password</label>
+              <input type="password" class="input">
+           </div> 
+            <div class="inputfield">
+              <label>Gender</label>
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
               </div>
-            </form>
+           </div> 
+            <div class="inputfield">
+              <label>Email Address</label>
+              <input type="text" class="input">
+           </div> 
+          <div class="inputfield">
+              <label>Phone Number</label>
+              <input type="text" class="input">
+           </div> 
+          <div class="inputfield terms">
+              <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <p>Agreed to terms and conditions</p>
+           </div> 
+          <div class="inputfield">
+            <input type="submit" value="Register" class="btn">
           </div>
         </div>
-      </section>
+    </div>
 
       <!--=============== NEWSLETTER ===============-->
       <section class="newsletter section">
