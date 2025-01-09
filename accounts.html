@@ -119,8 +119,8 @@
               </div>
             </div>
             <div class="tab__content" content id="Upload-File">
-              <h3 class="tab__header">Upload Pdf</h3>
-              <div class="tab__body">
+              <h3 class="tab__header">Upload File</h3>
+              <!-- <div class="tab__body">
                 <form class="form grid">
                   <input
                     type="text"
@@ -139,83 +139,87 @@
                     <button class="btn btn--md">Upload</button>
                   </div>
                 </form>
-              </div>
+              </div> -->
+              <div class="wrapper">
+                
+                <div class="form">
+                  <div class="inputfield">
+                    <label>Title</label>
+                    <input type="text" class="input">
+                 </div>  
+                   <div class="inputfield">
+                      <label>Upload File</label>
+                      <input type="file" class="input">
+                   </div>
+                   <div class="inputfield">
+                    <label>Date</label>
+                    <input type="date" class="input">
+                 </div>   
+                  <div class="inputfield">
+                    <input type="submit" value="Upload" class="btn">
+                  </div>
+                </div>
+            </div>
               <section class="cart section--lg container">
                 <div class="table__container">
-                  <table class="table">
-                    <!-- table header -->
+                  <h3>Recent Upload</h3>
+                  <table>
                     <thead>
                       <tr>
-                        <th>Type</th>
-                        <th colspan="3">Name</th>
-                        <th>Date</th>
-                        <th>Action</th>
+                          <th >Type</th>
+                          <th >Name</th>
+                          <th >Date</th>
+                          <th >Action</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <!-- Links 1 -->
                       <tr>
-                        <td>
-                          <img
-                            src="./assets//img/img.png"
-                            alt=""
-                            class="table__img"
-                          />
-                        </td>
-                        <td colspan="3">
-                          <h3 class="table__title">
-                            Topic 1
-                          </h3>
-                          <p class="table__description">
-                            Topic related short Notes
-                          </p>
-                        </td>
-                        <td>
-                          <span class="table__price">05-01-2025</span>
-                        </td>
-                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                        <td data-label="Type"><img
+                          src="./assets//img/pdf.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 1
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
                       </tr>
-                      <!-- Link 2 -->
                       <tr>
-                        <td>
-                          <img
-                            src="./assets//img/pdf.png"
-                            alt=""
-                            class="table__img"
-                          />
-                        </td>
-                        <td colspan="3">
-                          <h3 class="table__title">Topic 2</h3>
-                          <p class="table__description">
-                            Topic related short Notes
-                          </p>
-                        </td>
-                        <td>
-                          <span class="table__price">05-01-2025</span>
-                        </td>
-                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                        <td data-label="Type"><img
+                          src="./assets//img/img.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 2
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
                       </tr>
-                      <!-- Link 3 -->
                       <tr>
-                        <td>
-                          <img
-                            src="./assets//img/doc.png"
-                            alt=""
-                            class="table__img"
-                          />
-                        </td>
-                        <td colspan="3">
-                          <h3 class="table__title">
-                            Topic 3
-                          </h3>
-                          <p class="table__description">
-                            Topic related short Notes
-                          </p>
-                        </td>
-                        <td>
-                          <span class="table__price">05-01-2025</span>
-                        </td>
-                        <td><i class="fi fi-rs-trash table__trash"></i></td>
+                        <td data-label="Type"><img
+                          src="./assets//img/doc.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 3
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
                       </tr>
                     </tbody>
                   </table>
@@ -224,7 +228,7 @@
             </div>
             <div class="tab__content" content id="Upload-Link">
               <h3 class="tab__header">Upload Links</h3>
-              <div class="tab__body">
+              <!-- <div class="tab__body">
                 <form class="form grid">
                   <input
                     type="text"
@@ -245,11 +249,31 @@
                     <button class="btn btn--md">Upload</button>
                   </div>
                 </form>
-              </div>
+              </div> -->
+              <div class="wrapper">
+                
+                <div class="form">
+                  <div class="inputfield">
+                    <label>Title</label>
+                    <input type="text" class="input">
+                 </div>  
+                   <div class="inputfield">
+                      <label>Url</label>
+                      <input type="url" class="input">
+                   </div>
+                   <div class="inputfield">
+                    <label>Date</label>
+                    <input type="date" class="input">
+                 </div>   
+                  <div class="inputfield">
+                    <input type="submit" value="Upload" class="btn">
+                  </div>
+                </div>
+            </div>
               <section class="cart section--lg container">
                 <div class="table__container">
-                  <table class="table">
-                    <!-- table header -->
+                  <!-- <table class="table">
+                     
                     <thead>
                       <tr>
                         <th>Type</th>
@@ -259,7 +283,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <!-- Links 1 -->
+                     
                       <tr>
                         <td>
                           <img
@@ -281,7 +305,7 @@
                         </td>
                 <td><i class="fi fi-rs-trash table__trash"></i></td>
                       </tr>
-                      <!-- Link 2 -->
+                      
                       <tr>
                         <td>
                           <img
@@ -301,7 +325,7 @@
                         </td>
                         <td><i class="fi fi-rs-trash table__trash"></i></td>    
                       </tr>
-                      <!-- Link 3 -->
+                      
                       <tr>
                         <td>
                           <img
@@ -324,13 +348,74 @@
                 <td><i class="fi fi-rs-trash table__trash"></i></td>
                       </tr>
                     </tbody>
+                  </table> -->
+                  <h3>Recent Upload</h3>
+                  <table>
+                    <thead>
+                      <tr>
+                          <th >Type</th>
+                          <th >Name</th>
+                          <th >Date</th>
+                          <th >Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Type"><img
+                          src="./assets//img/chain.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 1
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td data-label="Type"><img
+                          src="./assets//img/chain.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 2
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                      <tr>
+                        <td data-label="Type"><img
+                          src="./assets//img/chain.png"
+                          alt=""
+                          class="table__img"
+                        /></td>
+                        <td data-label="Name"><h3 class="table__title">
+                          Topic 3
+                        </h3></a>
+                        <p class="table__description">
+                          Topic related short Notes
+                        </p>
+                      </td>
+                        <td data-label="Date"><span class="table__price">05-01-2025</span></td>
+                        <td data-label="Action"><a href="#"><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
               </section>
             </div>
             <div class="tab__content" content id="update-profile">
               <h3 class="tab__header">Update Profile</h3>
-              <div class="tab__body">
+              <!-- <div class="tab__body">
                 <form class="form grid">
                   <input
                     type="text"
@@ -341,11 +426,23 @@
                     <button class="btn btn--md">Save</button>
                   </div>
                 </form>
-              </div>
+              </div> -->
+              <div class="wrapper">
+                
+                <div class="form">
+                  <div class="inputfield">
+                    <label>Username</label>
+                    <input type="text" class="input">
+                 </div>  
+                  <div class="inputfield">
+                    <input type="submit" value="Submit" class="btn">
+                  </div>
+                </div>
+            </div>
             </div>
             <div class="tab__content" content id="change-password">
               <h3 class="tab__header">Change Password</h3>
-              <div class="tab__body">
+              <!-- <div class="tab__body">
                 <form class="form grid">
                   <input
                     type="password"
@@ -366,7 +463,27 @@
                     <button class="btn btn--md">Save</button>
                   </div>
                 </form>
-              </div>
+              </div> -->
+              <div class="wrapper">
+                
+                <div class="form">
+                  <div class="inputfield">
+                    <label>Current Password</label>
+                    <input type="password" class="input">
+                 </div>  
+                   <div class="inputfield">
+                      <label>New Password</label>
+                      <input type="password" class="input">
+                   </div>
+                   <div class="inputfield">
+                    <label>Confirm Password</label>
+                    <input type="password" class="input">
+                 </div>   
+                  <div class="inputfield">
+                    <input type="submit" value="Update" class="btn">
+                  </div>
+                </div>
+            </div>
             </div>
           </div>
         </div>
