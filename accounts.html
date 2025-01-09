@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>ShareNest</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/SHAREnES (1).jpg"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="./assets/img/logo.svg" alt="">
+            </a>
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="newidea.html" class="nav__link">NewIdeas</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">My Account</a>
+            </li>
+            <li class="nav__item">
+              <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link">Login</a>
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <img src="./assets//img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Account</span></li>
+        </ul>
+      </section>
+
+      <!--=============== ACCOUNTS ===============-->
+      <section class="accounts section--lg">
+        <div class="accounts__container container grid">
+          <div class="account__tabs">
+            <p class="account__tab active-tab" data-target="#dashboard">
+              <i class="fi fi-rs-settings-sliders"></i> Dashboard
+            </p>
+            <p class="account__tab" data-target="#Upload-File">
+              <i class="fi fi-rs-shopping-bag"></i> Upload File
+            </p>
+            <p class="account__tab" data-target="#Upload-Link">
+              <i class="fi fi-rs-shopping-bag"></i> Upload Link
+            </p>
+            <p class="account__tab" data-target="#update-profile">
+              <i class="fi fi-rs-user"></i> Update Profile
+            </p>
+            <p class="account__tab" data-target="#change-password">
+              <i class="fi fi-rs-settings-sliders"></i> Change Password
+            </p>
+            <p class="account__tab"><i class="fi fi-rs-exit"></i> Logout</p>
+          </div>
+          <div class="tabs__content">
+            <div class="tab__content active-tab" content id="dashboard">
+              <h3 class="tab__header">Hello Abhinav</h3>
+              <div class="tab__body">
+                <p class="tab__description">
+                  From your account dashboard. you can easily check & view your
+                  uploaded Notes & Pdf, manage and delete your pdf and
+                  edit your password and account details
+                </p>
+              </div>
+            </div>
+            <div class="tab__content" content id="Upload-File">
+              <h3 class="tab__header">Upload Pdf</h3>
+              <div class="tab__body">
+                <form class="form grid">
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="form__input"
+                  />
+                  <input
+                    type="file"
+                  />
+                  <input
+                    type="date"
+                    placeholder=""
+                    class="form__input"
+                  />
+                  <div class="form__btn">
+                    <button class="btn btn--md">Upload</button>
+                  </div>
+                </form>
+              </div>
+              <section class="cart section--lg container">
+                <div class="table__container">
+                  <table class="table">
+                    <!-- table header -->
+                    <thead>
+                      <tr>
+                        <th>Type</th>
+                        <th colspan="3">Name</th>
+                        <th>Date</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Links 1 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/img.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">
+                            Topic 1
+                          </h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                      <!-- Link 2 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/pdf.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">Topic 2</h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                      <!-- Link 3 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/doc.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">
+                            Topic 3
+                          </h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                        <td><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+            <div class="tab__content" content id="Upload-Link">
+              <h3 class="tab__header">Upload Links</h3>
+              <div class="tab__body">
+                <form class="form grid">
+                  <input
+                    type="text"
+                    placeholder="Title"
+                    class="form__input"
+                  />
+                  <input
+                    type="url"
+                    placeholder="Links"
+                    class="form__input"
+                  />
+                  <input
+                    type="date"
+                    placeholder=""
+                    class="form__input"
+                  />
+                  <div class="form__btn">
+                    <button class="btn btn--md">Upload</button>
+                  </div>
+                </form>
+              </div>
+              <section class="cart section--lg container">
+                <div class="table__container">
+                  <table class="table">
+                    <!-- table header -->
+                    <thead>
+                      <tr>
+                        <th>Type</th>
+                        <th colspan="3">Name</th>
+                        <th>Date</th>
+                        <th>Reactions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Links 1 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/chain.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">
+                            Topic 1
+                          </h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                      <!-- Link 2 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/chain.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">Topic 2</h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                        <td><i class="fi fi-rs-trash table__trash"></i></td>    
+                      </tr>
+                      <!-- Link 3 -->
+                      <tr>
+                        <td>
+                          <img
+                            src="./assets//img/chain.png"
+                            alt=""
+                            class="table__img"
+                          />
+                        </td>
+                        <td colspan="3">
+                          <h3 class="table__title">
+                            Topic 3
+                          </h3>
+                          <p class="table__description">
+                            Topic related short Notes
+                          </p>
+                        </td>
+                        <td>
+                          <span class="table__price">05-01-2025</span>
+                        </td>
+                <td><i class="fi fi-rs-trash table__trash"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </div>
+            <div class="tab__content" content id="update-profile">
+              <h3 class="tab__header">Update Profile</h3>
+              <div class="tab__body">
+                <form class="form grid">
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    class="form__input"
+                  />
+                  <div class="form__btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="tab__content" content id="change-password">
+              <h3 class="tab__header">Change Password</h3>
+              <div class="tab__body">
+                <form class="form grid">
+                  <input
+                    type="password"
+                    placeholder="Current Password"
+                    class="form__input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="New Password"
+                    class="form__input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    class="form__input"
+                  />
+                  <div class="form__btn">
+                    <button class="btn btn--md">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/SHAREnES (1).jpg" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Address:</span> ABES Engineering College Ghaziabad
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span>(+91) 7905572730 /(+91) 7651972544
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Me</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Sign In</a></li>
+            <li><a href="#" class="footer__link">Profile</a></li>
+            <li><a href="#" class="footer__link">Help</a></li>
+            <li><a href="#" class="footer__link">Queries</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payed Gateways</h3>
+          <img
+            src="./assets/img/payment-method.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2025 ShareNest. All right reserved</p>
+        <span class="designer">Developed by ABHII & ANGAD </span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
